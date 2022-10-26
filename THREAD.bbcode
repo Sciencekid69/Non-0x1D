@@ -23,7 +23,7 @@ For me to be able to properly explain all of this, you will need to take in and 
 [list]
 [*]There are a couple of fairly well-made documents containing decent previous community findings and documentation on the rbxm format, the best probably being in [url=https://dom.rojo.space/binary]the docs for rbx-dom[/url]. (Yes, the same team that made [url=https://rojo.space]Rojo[/url]) There are some minor issues with this doc such as the header signature being "[font=Courier New]89 FF 0A 1A 0A[/font]" (Hex), when it's actually [font=Courier New]89 FF 0D 0A 1A 0A[/font].
 
-[*]Each rbxm file contains first a [url=https://dom.rojo.space/binary#file-header]file header[/url], and then a proceeding list of "[url=https://dom.rojo.space/binary#chunks]chunks[/url]". We're personally interested in the [url=https://dom.rojo.space/binary#prop-chunk][font=Courier New]PROP[/font][/url] and (more recently, undocumented) [font=Courier New]SIGN[/font] chunck.
+[*]Each rbxm file contains first a [url=https://dom.rojo.space/binary#file-header]file header[/url], and then a proceeding list of "[url=https://dom.rojo.space/binary#chunks]chunks[/url]". We're personally interested in the [url=https://dom.rojo.space/binary#prop-chunk][font=Courier New]PROP[/font][/url] and (more recently, undocumented) [font=Courier New]SIGN[/font] chunk.
 
 [*]Chunks themselves [b]can[/b] be compressed using either the [url=https://en.wikipedia.org/wiki/LZ4_(compression_algorithm)]LZ4[/url] compression algorithm, or, (just this week, also undocumented) the [url=https://github.com/facebook/zstd]"zstd"[/url] compression algorithm.
 You can see more about how chunks with compression work [url=https://dom.rojo.space/binary#chunks]here[/url].
