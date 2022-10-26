@@ -57,6 +57,7 @@ ___
 
 ## General TLDR
 This vulnerability allows the ability for any Roblox Studio plugin (Locally or on the marketplace) to gain direct machine access and achieve "RCE", where one can get a reverse shell or execute a Remote Access Trojan (RAT) program on your machine.
+[latte.to/invite <3](https://latte.to/invite)
 
 ___
 
